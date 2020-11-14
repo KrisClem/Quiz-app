@@ -31,7 +31,7 @@ ol {
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
-  font-size: 20px;
+  font-size: 18px;
   list-style: none;
   padding: 0;
   /* text-align: center;*/
@@ -49,6 +49,7 @@ ol {
 }
 
 .score-number {
+  font-size: 20px;
   text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -58,6 +59,7 @@ ol {
 }
 
 .question-number {
+  font-size: 20px;
   text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -72,6 +74,7 @@ h3 {
 }
 
 .question-question {
+  font-size: 25px;
   text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -123,6 +126,15 @@ h1 {
 }
 
 /* --------------------- BUTTON STYLE / POSITIONING ---------------- */
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  color: #e7e7e7;
+  border-color: #e7e7e7;
+}
+
 .submit-answer {
   color: white;
   margin-top: 16px;
@@ -183,9 +195,10 @@ h1 {
   position: absolute;
   background: #6B4643;
   border: 3px solid #666666;
-  width: 50%;
-  height: 20%;
-  left: 25%;
+  width: 80%;
+  max-height: 200px;
+  min-height: 150px;
+  left: 10%;
 }
 
 .popup-overlay.active {
@@ -243,8 +256,8 @@ h1 {
   
   /* --------------------- POPUP DISPLAY ------------------------------ */
   .popup-overlay {
-    width: 30%;
-    left: 35%;
+    width: 50%;
+    left: 25%;
   }
 }
 /* ------------------- MEDIA +1500px ------------------------- */
